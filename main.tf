@@ -4,8 +4,8 @@ provider "aws" {
 
 resource "aws_instance" "one" {
   count                  = 4
-  ami                    = "ami-0279a86684f669718 "
-  instance_type          = "t2.micro"
+  ami                    = "ami-0b8d527345fdace59"
+  instance_type          = "t3.micro"
   key_name               = "jekins"
   vpc_security_group_ids = ["sg-005dac616f2223950"]
   tags = {
